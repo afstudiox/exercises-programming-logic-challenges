@@ -15,6 +15,8 @@ e o valor de suas vendas,  calcule e retorne a comissão e seu salário final no
 
 function totalReceive(salary, sales){
   // Desenvolva seu código nessa função
+  const comission = sales*0.04;
+  return `A comissão é: ${comission} e o ganho total é: ${salary+comission}`
 }
 
 module.exports = totalReceive;

@@ -17,6 +17,13 @@ Retorne uma mensagem no seguinte formato:
 
 function weightedAverage(score1, score2, score3) {
   // Desenvolva seu código nessa função
+  const ponder1 = 0.3;
+  const ponder2 = 0.3;
+  const ponder3 = 0.4;
+  const averagePonder = +(( score1 * ponder1 + score2 * ponder2 + score3 * ponder3)).toFixed(1)
+  return averagePonder >= 6 ? `Aprovação, média: ${averagePonder}` : `Reprovação, média: ${averagePonder}`
 }
+
+console.log(weightedAverage(2, 5, 10));
 
 module.exports = weightedAverage;

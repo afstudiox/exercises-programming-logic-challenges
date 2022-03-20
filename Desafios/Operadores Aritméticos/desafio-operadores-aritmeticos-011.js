@@ -22,6 +22,11 @@ Obs: seguir o mesmo formato de retorno da mensagem de saída.
 
 function paymentOptions(price) {
   // Desenvolva seu código nessa função
+  const vista = +(price*.9.toPrecision(3));
+  const prazo = +((price*1.15)/4).toPrecision(3);
+  return `À Vista: R$${vista} ou 4x de: R$${prazo}`
 }
+
+console.log(paymentOptions(10))
 
 module.exports = paymentOptions;
