@@ -10,6 +10,9 @@ Obs: Retornar um valor do tipo number com duas casa decimais.
 
 function restaurantExpenses(account){
   // Desenvolva seu código nessa função
+  return Number(((account*1.1)*1.05).toFixed(2));
 }
+
+console.log(restaurantExpenses(100));
 
 module.exports = restaurantExpenses;

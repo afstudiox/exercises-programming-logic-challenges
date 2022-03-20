@@ -19,6 +19,10 @@ calcule a pontuação final da pessoa jogadora e a retorne no formato:
 
 function calculateScore(distance) {
   // Desenvolva seu código nessa função
+  const extraPoint = distance >= 5 ? (distance / 5) * 2 : 0
+  return `A pontuação da pessoa jogadora foi de ${distance+extraPoint}`
 }
+
+console.log(calculateScore(10));
 
 module.exports = calculateScore;

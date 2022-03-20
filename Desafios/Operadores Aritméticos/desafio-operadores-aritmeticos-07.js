@@ -15,6 +15,9 @@ Escreva um algoritmo que calcula e retorne o tempo em minutos que Ana levará pa
 
 function readingTime(totalPages, readPages, minutes){
   // Desenvolva seu código nessa função
+  const result = (totalPages*minutes)/readPages
+  return `Ana levará ${result} minutos para ler o livro todo`
 }
+
 
 module.exports = readingTime;

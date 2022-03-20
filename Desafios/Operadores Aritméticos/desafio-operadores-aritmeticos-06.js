@@ -14,6 +14,10 @@ Escreva o algoritmo usado por André para calcular seu próprio IMC e o retorne.
 
 function IMC(base, height){
   // Desenvolva seu código nessa função
+  const powerH = height**2
+  return powerH/base;
 }
+
+console.log(IMC(70,1.8))
 
 module.exports = IMC;
